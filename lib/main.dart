@@ -1,4 +1,6 @@
+import 'package:book_app/Features/Splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(BookApp());
@@ -9,6 +11,6 @@ class BookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Text(''));
+    return MaterialApp(home: SplashView());
   }
 }
