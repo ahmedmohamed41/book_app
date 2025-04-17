@@ -1,6 +1,7 @@
 import 'package:book_app/Features/Splash/presentation/views/splash_view.dart';
+import 'package:book_app/core/utils/constants.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 
 void main() {
   runApp(BookApp());
@@ -11,6 +12,10 @@ class BookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: SplashView());
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColors),
+      home: SplashView(),
+    );
   }
 }
