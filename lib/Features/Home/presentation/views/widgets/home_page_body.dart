@@ -1,5 +1,5 @@
+import 'package:book_app/Features/Home/presentation/views/widgets/custom_books_view_list.dart';
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_appbar.dart';
-import 'package:book_app/Features/Home/presentation/views/widgets/custom_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class HomePageBody extends StatelessWidget {
@@ -10,17 +10,11 @@ class HomePageBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
       child: Column(
-        
         children: [
           SizedBox(height: 50),
           CustomAppbar(),
           SizedBox(height: 20),
-          ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) => CustomListViewItem(),
-            separatorBuilder: (context, index) => SizedBox(width: 10),
-            itemCount: 10,
-          ),
+          CustomBooksViewList(),
         ],
       ),
     );
