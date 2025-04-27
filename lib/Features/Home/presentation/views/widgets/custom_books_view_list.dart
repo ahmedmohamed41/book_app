@@ -10,7 +10,6 @@ class CustomBooksViewList extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.25,
       child: ListView.separated(
         physics: BouncingScrollPhysics(),
-
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => CustomListViewItem(),
         separatorBuilder: (context, index) => SizedBox(width: 15),
