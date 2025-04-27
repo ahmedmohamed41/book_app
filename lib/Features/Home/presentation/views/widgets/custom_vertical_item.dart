@@ -18,7 +18,7 @@ class CustomVerticalItem extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.red,
                 image: DecorationImage(
-                  image: AssetImage(AssetsData.testImage),
+                  image: AssetImage(AssetsData.logo1),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -34,7 +34,7 @@ class CustomVerticalItem extends StatelessWidget {
                 'Harry Potter \nand the Goblet of Fire',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: Styles.titleMedum,
+                style: Styles.textStyle20,
               ),
               Text(
                 'J.K.Rowling',
@@ -43,7 +43,7 @@ class CustomVerticalItem extends StatelessWidget {
               SizedBox(height: 10),
               Row(
                 children: [
-                  Text('19.99 €', style: Styles.titlesmall),
+                  Text('19.99 €', style: Styles.textStyle20),
                   Spacer(),
                   Row(
                     children: [
@@ -51,11 +51,13 @@ class CustomVerticalItem extends StatelessWidget {
                         onPressed: () {},
                         icon: Icon(Icons.star, size: 20, color: Colors.yellow),
                       ),
-                      Text('4.8', style: Styles.titlesmall),
+                      Text('4.8', style: Styles.textStyle16),
                       SizedBox(width: 7),
                       Text(
                         '(2390)',
-                        style: TextStyle(fontWeight: FontWeight.w100),
+                        style: Styles.textStyle14.copyWith(
+                          color: Colors.white.withAlpha(100),
+                        ),
                       ),
                     ],
                   ),
