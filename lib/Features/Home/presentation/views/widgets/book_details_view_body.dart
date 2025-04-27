@@ -1,6 +1,8 @@
 import 'package:book_app/Features/Home/presentation/views/custom_appbar_details.dart';
+import 'package:book_app/Features/Home/presentation/views/widgets/custom_image_item.dart';
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_item_details_view.dart';
-import 'package:book_app/Features/Home/presentation/views/widgets/custom_list_view_item.dart';
+import 'package:book_app/Features/Home/presentation/views/widgets/custom_vertical_details_view_list.dart';
+import 'package:book_app/core/utils/assets.dart';
 import 'package:book_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +20,11 @@ class BookDetailsViewBody extends StatelessWidget {
           SizedBox(height: 20),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.3,
-            child: CustomListViewItem(),
+            child: CustomImageItem(
+              aspectRatio: 1 / 2,
+              heightRatio: 0.18,
+              assetName: AssetsData.testImage,
+            ),
           ),
           SizedBox(height: 20),
           Text('The Jungle Book', style: Styles.textStyle30),
@@ -26,6 +32,7 @@ class BookDetailsViewBody extends StatelessWidget {
             'Rudyard Kipling',
             style: Styles.textStyle18.copyWith(
               color: Colors.white.withAlpha(150),
+              fontStyle: FontStyle.italic,
             ),
           ),
           Row(
@@ -63,8 +70,20 @@ class BookDetailsViewBody extends StatelessWidget {
                 bottomRight: Radius.circular(13),
                 topRight: Radius.circular(13),
               ),
-             ],
+            ],
           ),
+          SizedBox(height: 40),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: Text('You can also like'),
+              ),
+            ],
+          ),
+          SizedBox(height: 15),
+          CustomVerticalDetailsViewList(),
         ],
       ),
     );

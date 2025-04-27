@@ -8,7 +8,9 @@ class CustomAppbarDetails extends StatelessWidget {
     return Row(
       children: [
         MaterialButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           child: Text('X', style: TextStyle(fontSize: 20)),
         ),
         Spacer(),

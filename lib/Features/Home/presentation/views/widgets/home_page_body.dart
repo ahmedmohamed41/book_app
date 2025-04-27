@@ -17,7 +17,7 @@ class HomePageBody extends StatelessWidget {
           SizedBox(height: 50),
           CustomAppbar(),
           SizedBox(height: 20),
-          CustomBooksViewList(),
+          CustomHorizontalBooksViewList(),
           SizedBox(height: 30),
           Text('Best Seller', style: Styles.textStyle18),
           SizedBox(height: 20),
