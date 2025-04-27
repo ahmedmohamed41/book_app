@@ -18,7 +18,7 @@ abstract class Styles {
   );
   static const textStyle20 = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.w400,
+   
     fontFamily: 'Inter',
   );
   static const textStyle30 = TextStyle(

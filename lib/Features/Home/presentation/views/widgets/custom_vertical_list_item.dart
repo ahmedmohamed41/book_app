@@ -3,19 +3,20 @@ import 'package:flutter/material.dart';
 
 class CustomVerticalListItem extends StatelessWidget {
   const CustomVerticalListItem({super.key});
- 
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: SizedBox(
-        height: MediaQuery.of(context).size.height ,
+        height: MediaQuery.of(context).size.height,
         child: ListView.separated(
-            physics: BouncingScrollPhysics(),
-            scrollDirection: Axis.vertical,
-            itemBuilder: (context, index) => CustomVerticalItem(),
-            separatorBuilder: (context, index) => SizedBox(height: 10),
-            itemCount: 10,
-          ),
+          padding: EdgeInsets.zero,
+          physics: BouncingScrollPhysics(),
+          scrollDirection: Axis.vertical,
+          itemBuilder: (context, index) => CustomVerticalItem(),
+          separatorBuilder: (context, index) => SizedBox(height: 10),
+          itemCount: 10,
+        ),
       ),
     );
   }

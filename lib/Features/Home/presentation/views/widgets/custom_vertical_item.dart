@@ -34,7 +34,7 @@ class CustomVerticalItem extends StatelessWidget {
                 'Harry Potter \nand the Goblet of Fire',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: Styles.textStyle20,
+                style: Styles.textStyle20.copyWith(fontWeight: FontWeight.w400),
               ),
               Text(
                 'J.K.Rowling',
@@ -43,7 +43,12 @@ class CustomVerticalItem extends StatelessWidget {
               SizedBox(height: 10),
               Row(
                 children: [
-                  Text('19.99 €', style: Styles.textStyle20),
+                  Text(
+                    '19.99 €',
+                    style: Styles.textStyle20.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Spacer(),
                   Row(
                     children: [
