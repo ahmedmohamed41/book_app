@@ -1,5 +1,4 @@
 import 'package:book_app/Features/Home/presentation/views/book_details_view.dart';
-import 'package:book_app/Features/Home/presentation/views/home_page_view.dart';
 import 'package:book_app/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
