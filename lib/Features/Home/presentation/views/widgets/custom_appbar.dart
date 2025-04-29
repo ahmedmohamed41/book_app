@@ -1,7 +1,7 @@
-import 'package:book_app/Features/search/view/search_view.dart';
+import 'package:book_app/core/utils/app_router.dart';
 import 'package:book_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomAppbarHome extends StatelessWidget {
   const CustomAppbarHome({super.key});
@@ -14,7 +14,7 @@ class CustomAppbarHome extends StatelessWidget {
         Spacer(),
         IconButton(
           onPressed: () {
-            Get.to(() => SearchView());
+            GoRouter.of(context).push(AppRouter.kSearchView);
           },
           icon: Icon(Icons.search_outlined, size: 30),
         ),

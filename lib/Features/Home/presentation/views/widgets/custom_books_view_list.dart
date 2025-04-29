@@ -1,9 +1,8 @@
-import 'package:book_app/Features/Home/presentation/views/book_details_view.dart';
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_image_item.dart';
+import 'package:book_app/core/utils/app_router.dart';
 import 'package:book_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
+import 'package:go_router/go_router.dart';
 class CustomHorizontalBooksViewList extends StatelessWidget {
   const CustomHorizontalBooksViewList({super.key});
 
@@ -20,7 +19,7 @@ class CustomHorizontalBooksViewList extends StatelessWidget {
               assetName: AssetsData.testImage,
               heightRatio: 0.18,
               onTap: () {
-                Get.to(() => BookDetailsView(), transition: Transition.fade);
+                GoRouter.of(context).push(AppRouter.kBookDetailsView);
               },
             ),
         separatorBuilder: (context, index) => SizedBox(width: 15),

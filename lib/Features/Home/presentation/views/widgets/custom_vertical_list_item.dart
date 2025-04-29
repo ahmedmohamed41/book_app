@@ -1,8 +1,8 @@
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_vertical_item.dart';
+import 'package:book_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
-import '../book_details_view.dart';
 
 class CustomVerticalListItem extends StatelessWidget {
   const CustomVerticalListItem({super.key});
@@ -19,7 +19,7 @@ class CustomVerticalListItem extends StatelessWidget {
           itemBuilder:
               (context, index) => CustomVerticalItem(
                 onTap: () {
-                 Get.to(() => BookDetailsView(), transition: Transition.fade);
+                  GoRouter.of(context).push(AppRouter.kBookDetailsView);
                 },
               ),
           separatorBuilder: (context, index) => SizedBox(height: 10),
