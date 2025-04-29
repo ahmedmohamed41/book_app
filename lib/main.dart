@@ -1,4 +1,6 @@
-
+// import 'package:book_app/Features/Home/presentation/views/book_details_view.dart';
+// import 'package:book_app/Features/Home/presentation/views/home_page_view.dart';
+// import 'package:book_app/Features/Splash/presentation/views/splash_view.dart';
 import 'package:book_app/Features/Splash/presentation/views/splash_view.dart';
 import 'package:book_app/core/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +18,7 @@ class BookApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColors),
-      home: SplashView(),
-      
+      home:SplashView(),
     );
   }
 }

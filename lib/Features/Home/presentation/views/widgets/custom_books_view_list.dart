@@ -16,7 +16,7 @@ class CustomHorizontalBooksViewList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder:
             (context, index) => CustomImageItem(
-              aspectRatio: 1 / 2,
+              aspectRatio: 2 / 3,
               assetName: AssetsData.testImage,
               heightRatio: 0.18,
               onTap: () {

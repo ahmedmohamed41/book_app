@@ -16,10 +16,15 @@ abstract class Styles {
     fontWeight: FontWeight.w400,
     fontFamily: 'Inter',
   );
-  static const textStyle20 = TextStyle(fontSize: 20, fontFamily: 'Inter');
+  static const textStyle20 = TextStyle(fontSize: 20, fontFamily: 'GT Sectra Fine');
   static const textStyle30 = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.w400,
+    fontFamily: 'GT Sectra Fine',
+  );
+  static const textStyleSearch = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
     fontFamily: 'GT Sectra Fine',
   );
 }
