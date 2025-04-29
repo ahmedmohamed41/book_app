@@ -1,4 +1,4 @@
-import 'package:book_app/Features/Home/presentation/views/custom_appbar_details.dart';
+import 'package:book_app/Features/Home/presentation/views/widgets/custom_appbar_details.dart';
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_image_item.dart';
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_item_details_view.dart';
 import 'package:book_app/Features/Home/presentation/views/widgets/custom_vertical_details_view_list.dart';

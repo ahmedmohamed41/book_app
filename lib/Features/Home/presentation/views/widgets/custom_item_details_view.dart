@@ -1,4 +1,3 @@
-
 import 'package:book_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -8,17 +7,17 @@ class CustomItemDetailsView extends StatelessWidget {
     required this.colorText,
     required this.colorContainar,
     required this.titleText,
-    this.topLeft=Radius.zero,
-    this.bottomLeft=Radius.zero,
-    this.bottomRight=Radius.zero,
-    this.topRight=Radius.zero,
+    this.topLeft = Radius.zero,
+    this.bottomLeft = Radius.zero,
+    this.bottomRight = Radius.zero,
+    this.topRight = Radius.zero,
   });
   final Color colorText;
   final Color colorContainar;
   final String titleText;
   final Radius topLeft;
   final Radius bottomLeft;
-  final Radius topRight ;
+  final Radius topRight;
   final Radius bottomRight;
   @override
   Widget build(BuildContext context) {
@@ -46,4 +45,3 @@ class CustomItemDetailsView extends StatelessWidget {
     );
   }
 }
-

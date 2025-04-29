@@ -4,7 +4,7 @@ import 'package:book_app/Features/Splash/presentation/views/splash_view.dart';
 import 'package:book_app/Features/search/view/search_view.dart';
 import 'package:go_router/go_router.dart';
 
- class AppRouter {
+class AppRouter {
   static const kSplashView = '/';
   static const kHomePage = '/homepage';
   static const kBookDetailsView = '/bookDetailsView';
