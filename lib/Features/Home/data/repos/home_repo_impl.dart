@@ -10,10 +10,24 @@ class HomeRepoImpl extends HomeRepo {
   HomeRepoImpl(this.apiService);
   @override
   Future<Either<Failure, List<BookModel>>> fetchBestSellerBookHome() async {
+    return await getDataHandlling(
+      endPoint: 'q=programming&filtering=free-ebooks&sorting=newest',
+    );
+  }
+
+  @override
+  Future<Either<Failure, List<BookModel>>>
+  fetchHorizontalBooksViewListHome() async {
+    return await getDataHandlling(
+      endPoint: 'q=programming&filtering=free-ebooks',
+    );
+  }
+
+  Future<Either<Failure, List<BookModel>>> getDataHandlling({
+    required String endPoint,
+  }) async {
     try {
-      var data = await apiService.get(
-        endPoints: 'q=programming&filtering=free-ebooks&sorting=newest',
-      );
+      var data = await apiService.get(endPoints: endPoint);
       List<BookModel> books = [];
       for (var element in data['items']) {
         books.add(BookModel.fromJson(element));
@@ -25,11 +39,5 @@ class HomeRepoImpl extends HomeRepo {
       }
       return left(ServerFailure(e.toString()));
     }
-  }
-
-  @override
-  Future<Either<Failure, List<BookModel>>> fetchHorizontalBooksViewListHome() {
-  
-    throw UnimplementedError();
   }
 }
