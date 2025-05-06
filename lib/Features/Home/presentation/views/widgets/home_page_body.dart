@@ -21,7 +21,7 @@ class HomePageBody extends StatelessWidget {
           SizedBox(height: 30),
           Text('Best Seller', style: Styles.textStyle18),
           SizedBox(height: 20),
-          CustomVerticalListItem(),
+          CustomBestSellerListItem(),
         ],
       ),
     );
