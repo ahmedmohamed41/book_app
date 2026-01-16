@@ -10,7 +10,7 @@ class HomeRepoImpl extends HomeRepo {
   HomeRepoImpl(this.apiService);
   @override
   Future<Either<Failure, List<BookModel>>> fetchBestSellerBookHome() async {
-    return await getDataHandlling(
+    return await getDataHandling(
       endPoint: 'q=programming&filtering=free-ebooks&sorting=newest',
     );
   }
@@ -18,12 +18,12 @@ class HomeRepoImpl extends HomeRepo {
   @override
   Future<Either<Failure, List<BookModel>>>
   fetchHorizontalBooksViewListHome() async {
-    return await getDataHandlling(
+    return await getDataHandling(
       endPoint: 'q=programming&filtering=free-ebooks',
     );
   }
 
-  Future<Either<Failure, List<BookModel>>> getDataHandlling({
+  Future<Either<Failure, List<BookModel>>> getDataHandling({
     required String endPoint,
   }) async {
     try {
