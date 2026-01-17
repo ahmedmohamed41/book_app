@@ -15,19 +15,19 @@ class BookDetailsViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
-          SizedBox(height: 50),
-          CustomAppbarDetails(),
-          SizedBox(height: 20),
+          const SizedBox(height: 50),
+          const CustomAppbarDetails(),
+          const SizedBox(height: 20),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.3,
-            child: CustomImageItem(
+            child: const CustomImageItem(
               aspectRatio: 1 / 2,
               heightRatio: 0.18,
               assetName: AssetsData.testImage,
             ),
           ),
-          SizedBox(height: 20),
-          Text('The Jungle Book', style: Styles.textStyle30),
+          const SizedBox(height: 20),
+          const Text('The Jungle Book', style: Styles.textStyle30),
           Text(
             'Rudyard Kipling',
             style: Styles.textStyle18.copyWith(
@@ -40,10 +40,10 @@ class BookDetailsViewBody extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.star, size: 20, color: Colors.yellow),
+                icon: const Icon(Icons.star, size: 20, color: Colors.yellow),
               ),
-              Text('4.8', style: Styles.textStyle16),
-              SizedBox(width: 7),
+              const Text('4.8', style: Styles.textStyle16),
+              const SizedBox(width: 7),
               Text(
                 '(2390)',
                 style: Styles.textStyle14.copyWith(
@@ -52,8 +52,8 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 20),
-          Row(
+          const SizedBox(height: 20),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomItemDetailsView(
@@ -72,18 +72,18 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 40),
-          Row(
+          const SizedBox(height: 40),
+          const Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
+                padding: EdgeInsets.symmetric(horizontal: 25),
                 child: Text('You can also like'),
               ),
             ],
           ),
-          SizedBox(height: 15),
-          CustomHorizontalDetailsViewList(),
+          const SizedBox(height: 15),
+          const CustomHorizontalDetailsViewList(),
         ],
       ),
     );

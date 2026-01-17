@@ -8,8 +8,8 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 50, left: 15, right: 15, bottom: 10),
+    return const Padding(
+      padding: EdgeInsets.only(top: 50, left: 15, right: 15, bottom: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

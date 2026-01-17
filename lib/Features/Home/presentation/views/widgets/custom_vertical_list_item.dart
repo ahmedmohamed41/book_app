@@ -13,7 +13,7 @@ class CustomBestSellerListItem extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         child: ListView.separated(
           padding: EdgeInsets.zero,
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           itemBuilder:
               (context, index) => CustomVerticalItem(
@@ -21,7 +21,7 @@ class CustomBestSellerListItem extends StatelessWidget {
                   GoRouter.of(context).push(AppRouter.kBookDetailsView);
                 },
               ),
-          separatorBuilder: (context, index) => SizedBox(height: 10),
+          separatorBuilder: (context, index) => const SizedBox(height: 10),
           itemCount: 10,
         ),
       ),

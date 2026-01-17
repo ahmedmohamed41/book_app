@@ -21,10 +21,10 @@ class CustomHorizontalDetailsViewList extends StatelessWidget {
                 heightRatio: 0.18,
                 assetName: AssetsData.testImage,
                 onTap: () {
-                  Get.to(() => BookDetailsView(), transition: Transition.fade);
+                  Get.to(() => const BookDetailsView(), transition: Transition.fade);
                 },
               ),
-          separatorBuilder: (context, index) => SizedBox(width: 10),
+          separatorBuilder: (context, index) => const SizedBox(width: 10),
           itemCount: 10,
         ),
       ),

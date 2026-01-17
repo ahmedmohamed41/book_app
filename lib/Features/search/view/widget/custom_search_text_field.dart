@@ -11,7 +11,7 @@ class CustomSearchTextField extends StatelessWidget {
         hintText: 'Search',
         suffixIcon: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.search_outlined),
+          icon: const Icon(Icons.search_outlined),
         ),
       ),
     );

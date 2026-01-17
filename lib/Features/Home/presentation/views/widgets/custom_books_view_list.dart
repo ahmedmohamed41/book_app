@@ -12,7 +12,7 @@ class CustomHorizontalBooksViewList extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.25,
       child: ListView.separated(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder:
             (context, index) => CustomImageItem(
@@ -23,7 +23,7 @@ class CustomHorizontalBooksViewList extends StatelessWidget {
                 GoRouter.of(context).push(AppRouter.kBookDetailsView);
               },
             ),
-        separatorBuilder: (context, index) => SizedBox(width: 15),
+        separatorBuilder: (context, index) => const SizedBox(width: 15),
         itemCount: 10,
       ),
     );

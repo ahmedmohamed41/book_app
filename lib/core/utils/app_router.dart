@@ -11,13 +11,16 @@ class AppRouter {
   static const kSearchView = '/searchView ';
   static final router = GoRouter(
     routes: [
-      GoRoute(path: '/', builder: (context, state) => SplashView()),
-      GoRoute(path: kHomePage, builder: (context, state) => HomePage()),
+      GoRoute(path: '/', builder: (context, state) => const SplashView()),
+      GoRoute(path: kHomePage, builder: (context, state) => const HomePage()),
       GoRoute(
         path: kBookDetailsView,
-        builder: (context, state) => BookDetailsView(),
+        builder: (context, state) => const BookDetailsView(),
       ),
-      GoRoute(path: kSearchView, builder: (context, state) => SearchView()),
+      GoRoute(
+        path: kSearchView,
+        builder: (context, state) => const SearchView(),
+      ),
     ],
   );
 }

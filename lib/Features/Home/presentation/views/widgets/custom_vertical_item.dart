@@ -12,12 +12,12 @@ class CustomVerticalItem extends StatelessWidget {
       onTap: onTap,
       child: Row(
         children: [
-          CustomImageItem(
+          const CustomImageItem(
             aspectRatio: 1 / 2,
             assetName: AssetsData.testImage,
             heightRatio: 0.17,
           ),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,11 +30,11 @@ class CustomVerticalItem extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                Text(
+                const Text(
                   'J.K.Rowling',
                   style: TextStyle(fontWeight: FontWeight.w200),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Row(
                   children: [
                     Text(
@@ -43,19 +43,19 @@ class CustomVerticalItem extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Row(
                       children: [
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.star,
                             size: 20,
                             color: Colors.yellow,
                           ),
                         ),
-                        Text('4.8', style: Styles.textStyle16),
-                        SizedBox(width: 7),
+                        const Text('4.8', style: Styles.textStyle16),
+                        const SizedBox(width: 7),
                         Text(
                           '(2390)',
                           style: Styles.textStyle14.copyWith(

@@ -11,12 +11,12 @@ class CustomAppbarHome extends StatelessWidget {
     return Row(
       children: [
         Image.asset(AssetsData.logo1, scale: 3),
-        Spacer(),
+        const Spacer(),
         IconButton(
           onPressed: () {
             GoRouter.of(context).push(AppRouter.kSearchView);
           },
-          icon: Icon(Icons.search_outlined, size: 30),
+          icon: const Icon(Icons.search_outlined, size: 30),
         ),
       ],
     );

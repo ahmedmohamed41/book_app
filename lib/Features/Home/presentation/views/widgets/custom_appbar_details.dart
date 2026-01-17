@@ -11,12 +11,12 @@ class CustomAppbarDetails extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('X', style: TextStyle(fontSize: 20)),
+          child: const Text('X', style: TextStyle(fontSize: 20)),
         ),
-        Spacer(),
+        const Spacer(),
         MaterialButton(
           onPressed: () {},
-          child: Icon(Icons.shopping_cart_outlined, size: 30),
+          child: const Icon(Icons.shopping_cart_outlined, size: 30),
         ),
       ],
     );
